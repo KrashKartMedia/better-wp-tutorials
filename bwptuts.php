@@ -50,7 +50,7 @@ function wp_interactive_tutorials_custom_menu_page(){
 								</p>
 								<p>
 										<?php echo '<code>register-url=""</code>'; ?> 			
-										<?php echo __( 'The link to the WP Dashboard. Link /wp-admin/, /wp-login.php/ or /your-login-url/. Default URL: /wp-admin/', 'wp_interactive_tutorials' );?>
+										<?php echo __( 'The link to your login page. Like /wp-admin/, /wp-login.php/ or /your-login-url/. Default URL: /wp-admin/', 'wp_interactive_tutorials' );?>
 								</p>
 								<p>
 										<?php echo '<code>other=""</code>'; ?> 			
