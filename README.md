@@ -21,7 +21,7 @@ Say a users site is https:russellenvy.com. The user creates a free account on yo
 
 Instead of telling the user: Log into your site > visit the dashboard > Settings > Permalinks
 
-You can use a shortcode to link a user to https://russellenvy.com/wp-admin/options-permalink.php. Plugin and theme urls, inside of the WordPress Dashboard, hardly change. Let's take advantage of this.
+You can use a shortcode to link a user to https://russellenvy.com/wp-admin/options-permalink.php. Instead of showing the full link, you can replace the text with <a href="https://russellenvy.com/wp-admin/options-permalink.php">View Permalinks</a>" Plugin and theme urls, inside of the WordPress Dashboard, hardly change. Let's take advantage of this.
 
 == Installation ==
 
