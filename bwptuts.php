@@ -148,6 +148,29 @@ function better_wp_tutorials_custom_menu_page(){
 							</div>
 						</div>
 						<!-- .postbox -->
+						<div class="postbox">
+							<div style="background-color:#0073aa;width:100%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>
+							<?php echo __( 'Some Other Details', 'better_wp_tutorials' ); ?>
+							</span></h2></div>
+							<div class="inside">
+							<p>
+							<?php echo __( 'You need to use another plugin allowing your WordPress site to allow anyone to register as a subscriber, or use a plugin allowing users to create a free account and edit their profile on the front end of your site.', 'better_wp_tutorials' ); ?>
+							</p>
+							<p>
+							<?php echo __( 'Once you set up a tutorial, you shouldnt have to edit it again, unless the urls change. Sometimes a plugin autor might change the url to a settings page or options tabs.', 'better_wp_tutorials' ); ?>
+							</p>
+							<p>
+							<?php echo __( 'If a user is not logged in, the output is a little ugly. Its designed to intrigue users to create a free profile to see sexy links and link directly to their site.', 'better_wp_tutorials' ); ?>
+							</p>
+							<p>
+							<?php echo __( 'This plugin does not work with MultiSite, yet', 'better_wp_tutorials' ); ?>
+							</p>
+							<p>
+							<?php echo __( 'Version', 'better_wp_tutorials' ) . ' 0.0.1' ; ?>
+							</p>
+							</div>
+						</div>
+						<!-- .postbox -->
 					</div>
 					<!-- .meta-box-sortables -->
 				</div>
