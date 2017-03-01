@@ -1,4 +1,5 @@
 === Better WP Tutorials ===
+
 Contributors: GeekStreetWP
 Author URI: http://russellenvy.com
 Tags: post, posts, page, pages, plugin, plugins, admin, custom post type, dashboard, list
