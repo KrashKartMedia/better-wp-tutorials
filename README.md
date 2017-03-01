@@ -2,7 +2,7 @@
 
 Contributors: GeekStreetWP
 Author URI: http://russellenvy.com
-Tags: post, posts, page, pages, plugin, plugins, admin, custom post type, dashboard, list
+Tags: shortcode, shortcodes, plugin, plugins, text, admin, administration, author, dashboard, editor, link, links, login, marketing, page, pages, post, posts, profile, registration, simple, url, user, users, 
 Requires at least: 4.1
 Tested up to: 4.7.2
 Stable tag: 1.8
