@@ -2,7 +2,7 @@
 /**
 * Plugin Name: Better WP Tutorials
 * Plugin URI: https://russellenvy.com
-* Description: reates short codes for user interactive tutorials. If a user is logged in, outputs pretty links, linking the user to their site defined in the WordPress Profile form. If user is passing by, output ugly text and convince them to become a free member.
+* Description: Creates short codes for user interactive tutorials. If a user is logged in, outputs pretty links, linking the user to their site defined in the WordPress Profile form. If user is passing by, output ugly text and convince them to become a free member.
 * Version: 0.0.1
 * Author: Russell Aaron
 * Author URI: https://russellenvy.com
