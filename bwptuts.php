@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {exit;}
 function wp_interactive_tutorials_custom_menu_page(){
     //start wrap
     	echo '<div class="wrap">';
-        echo '<h2>Better WP Tutorials</h2>';
+        echo '<h2>' . __( 'Interactive Tutorials', 'wp_interactive_tutorials' ) . '</h2>';
         ?>
         <div id="poststuff">
 			<div id="post-body" class="metabox-holder columns-2">
@@ -21,12 +21,12 @@ function wp_interactive_tutorials_custom_menu_page(){
 									<tr class="alternate">
 										<td class="row-title">
 										<?php echo __( 'Register Shortcode: ', 'wp_interactive_tutorials' ); ?> 			
-										<?php echo '[better-wp-tuts-register before-registered-text="" register-text="" register-url="" other=""]';?>
+										<?php echo '[interactive_tuts-register before-registered-text="" register-text="" register-url="" other=""]';?>
 										</td>
 									</tr>
 									<tr>
 										<td class="row-title">
-										<?php echo __( 'Better WP Tutorials Shortcode: ', 'wp_interactive_tutorials' ); ?> 						<?php echo '[better-wp-tuts logged-in-text="" link="" logged-out-text=""]';?>
+										<?php echo __( 'Interactive Tutorials Shortcode: ', 'wp_interactive_tutorials' ); ?> 						<?php echo '[interactive_tuts logged-in-text="" link="" logged-out-text=""]';?>
 										</td>
 									</tr>
 									</tbody>
@@ -57,7 +57,7 @@ function wp_interactive_tutorials_custom_menu_page(){
 										<?php echo __( 'The text displayed after the register text and url.', 'wp_interactive_tutorials' );?>
 								</p>
 								<p>
-										<?php echo '<b>Example</b>: <br>' . '<code>[better-wp-tuts-register before-registered-text="Create a free profile on our site to link directly to your site. " register-text="Sign Up" register-url="/login" other=" for free."]</code>'; ?>
+										<?php echo '<b>Example</b>: <br>' . '<code>[interactive_tuts-register before-registered-text="Create a free profile on our site to link directly to your site. " register-text="Sign Up" register-url="/login" other=" for free."]</code>'; ?>
 								</p>
 
 								<p>
@@ -67,7 +67,7 @@ function wp_interactive_tutorials_custom_menu_page(){
 						<!-- .postbox -->
 						<div class="postbox">
 							<div style="background-color:#0073aa;width:100%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>
-							<?php echo __( 'Better WP Tutorials Shortcode Parameters Defined', 'wp_interactive_tutorials' ); ?>
+							<?php echo __( 'Interactive Tutorials Shortcode Parameters Defined', 'wp_interactive_tutorials' ); ?>
 							</span></h2></div>
 							<div class="inside">
 										<?php echo '<code>logged-in-text=""</code>'; ?> 			
@@ -82,7 +82,7 @@ function wp_interactive_tutorials_custom_menu_page(){
 										<?php echo __( 'The text output before the link. Like Yoursite.com.', 'wp_interactive_tutorials' );?>
 								</p>
 								<p>
-										<?php echo '<b>Example</b>: <br>' . '<code>[better-wp-tuts logged-in-text="Install Query All The Post Types" logged-out-text="Visit Youriste.com " link="/wp-admin/plugin-install.php?s=query+all+the+post+types&tab=search&type=term"]</code>'; ?>
+										<?php echo '<b>Example</b>: <br>' . '<code>[interactive_tuts logged-in-text="Install Query All The Post Types" logged-out-text="Visit Youriste.com " link="/wp-admin/plugin-install.php?s=query+all+the+post+types&tab=search&type=term"]</code>'; ?>
 								</p>
 							</div>
 							<!-- .inside -->
@@ -116,11 +116,11 @@ function wp_interactive_tutorials_custom_menu_page(){
 							</p>
 							<p>
 							<h3><?php echo __( 'Dummy Text', 'wp_interactive_tutorials' ); ?></h3>
-							Lets Get Started. <br>[better-wp-tuts-register before-registered-text="Create a free profile on our site to link directly to your site. " register-text="Sign Up" register-url="/login" other=" for free."]
+							Lets Get Started. <br>[interactive_tuts-register before-registered-text="Create a free profile on our site to link directly to your site. " register-text="Sign Up" register-url="/login" other=" for free."]
 <ol>
-<li> [better-wp-tuts logged-in-text="Login Here" link="/wp-admin" logged-out-text="Login to Youriste.com "]</li>
-<li>[better-wp-tuts logged-in-text="Install Query All The Post Types" logged-out-text="Visit Youriste.com " link="/wp-admin/plugin-install.php?s=query+all+the+post+types&tab=search&type=term"]. Click on Install & Activate button.</li>
-<li>[better-wp-tuts logged-in-text="Visit Settings Page" logged-out-text="Visit Youriste.com " link="/wp-admin/options-general.php?page=query_all_the_post_types" message=" to see the settings page."]</li>
+<li> [interactive_tuts logged-in-text="Login Here" link="/wp-admin" logged-out-text="Login to Youriste.com "]</li>
+<li>[interactive_tuts logged-in-text="Install Query All The Post Types" logged-out-text="Visit Youriste.com " link="/wp-admin/plugin-install.php?s=query+all+the+post+types&tab=search&type=term"]. Click on Install & Activate button.</li>
+<li>[interactive_tuts logged-in-text="Visit Settings Page" logged-out-text="Visit Youriste.com " link="/wp-admin/options-general.php?page=query_all_the_post_types" message=" to see the settings page."]</li>
 </ol></p>
 							</div>
 							<!-- .inside -->
@@ -140,7 +140,7 @@ function wp_interactive_tutorials_custom_menu_page(){
 							</span></h2></div>
 							<div class="inside">
 							<p>
-							<?php echo __( 'Better WP Tutorials is a plugin that helps your site link directly to a users WordPress website, with the help of shortcodes. A user registers for a free account on your site. The user enters in their website url into the standard WordPress user profile. Every time a user views one of your tutorials, using these shortcodes, the user will be linked directly to their site. ', 'wp_interactive_tutorials' ); ?>
+							<?php echo __( 'Interactive Tutorials is a plugin that helps your site link directly to a users WordPress website, with the help of shortcodes. A user registers for a free account on your site. The user enters in their website url into the standard WordPress user profile. Every time a user views one of your tutorials, using these shortcodes, the user will be linked directly to their site. ', 'wp_interactive_tutorials' ); ?>
 							</p>
 							<p>
 							<?php echo __( 'Version', 'wp_interactive_tutorials' ) . ' 0.0.1' ; ?>
