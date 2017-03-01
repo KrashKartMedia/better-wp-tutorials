@@ -6,7 +6,7 @@ Requires at least: 4.1
 Tested up to: 4.7.2
 Stable tag: 1.8
 License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Shortcodes for writing better tutorials. Links users to their site, or outputs the regular tutorial text.
 
