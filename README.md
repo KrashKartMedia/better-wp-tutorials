@@ -1,4 +1,4 @@
-=== Better WP Tutorials ===
+=== Interactive Tutorials ===
 
 Contributors: GeekStreetWP
 Author URI: http://russellenvy.com
@@ -31,15 +31,15 @@ This section describes how to install the plugin and get it working.
 
 1. Navigate to the 'Add New' in the plugins dashboard
 2. Navigate to the 'Upload' area
-3. Select `better-wp-tutorials.zip` from your computer
+3. Select `interactive-tutorials.zip` from your computer
 4. Click 'Install Now'
 5. Activate the plugin in the Plugin dashboard
 
 = Using FTP =
 
-1. Download `better-wp-tutorials.zip`
-2. Extract the `better-wp-tutorials` directory to your computer
-3. Upload the `better-wp-tutorials` directory to the `/wp-content/plugins/` directory
+1. Download `interactive-tutorials.zip`
+2. Extract the `interactive-tutorials` directory to your computer
+3. Upload the `interactive-tutorials` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin dashboard
 
 == Changelog ==
