@@ -8,7 +8,7 @@ Stable tag: 1.8
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Shortcodes for writing better tutorials. Links users to their site, or outputs the regular tutorial text.
+Creates short codes for user interactive tutorials. If a user is logged in, outputs pretty links, linking the user to their site defined in the WordPress Profile form. If user is passing by, output ugly text and convince them to become a free member.
 
 == Description ==
 
