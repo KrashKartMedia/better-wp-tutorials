@@ -13,6 +13,15 @@ Creates short codes for user interactive tutorials. If a user is logged in, outp
 
 == Description ==
 
+WordPress tutorials help millions of users add functionality to their WordPress websites. The problem with tutorials starts with daisy chanes of instructions or really long urls to copy. 
+
+Interactive Tutorials is a simple WordPress plugin allowing users to define their website address in the standard WordPress user profile and uses that link the the shortcode, to link users to a page on their site. 
+
+Say a users site is https:russellenvy.com. The user creates a free account on your site and pastes the url in their profile. You create a shortcode linking to the permalinks page inside the users dashbaord. 
+
+Instead of telling the user: Log into your site > visit the dashboard > Settings > Permalinks
+
+You can use a shortcode to link a user to https://russellenvy.com/wp-admin/options-permalink.php. Plugin and theme urls, inside of the WordPress Dashboard, hardly change. Let's take advantage of this.
 
 == Installation ==
 
