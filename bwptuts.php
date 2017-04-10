@@ -1,5 +1,15 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) {exit;}
+add_action('admin_menu', 'loan_sifter_rates_shortcode_create_menu');
+function loan_sifter_rates_shortcode_create_menu() {
+	//create new top-level menu
+	//call register settings function
+	add_action( 'admin_init', 'loan_sifter_rates_shortcode_plugin_settings' );
+}
+function loan_sifter_rates_shortcode_plugin_settings() {
+	//register our settings
+	register_setting( 'interactive-tuts-setting-group', 'your_site_url' );
+}
 function wp_interactive_tutorials_custom_menu_page(){
     //start wrap
     	echo '<div class="wrap">';
@@ -11,6 +21,29 @@ function wp_interactive_tutorials_custom_menu_page(){
 				<!-- main content -->
 				<div id="post-body-content">
 					<div class="meta-box-sortables ui-sortable">
+					<div class="postbox">
+							<div style="background-color:#0073aa;width:100%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>
+								<?php echo __( 'Settings', 'mr-mortgage-wp' ); ?>
+							</span></h2></div>
+							<div class="inside">
+								<form method="POST" action="options.php">
+		    <?php settings_fields( 'interactive-tuts-setting-group' ); ?>
+		    <?php do_settings_sections( 'interactive-tuts-setting-group' ); ?>
+		    <p>
+		    	Set the default dummy url. Example: YourSite.com
+		    </p>
+		        	<input type="text" name="your_site_url" size="40" value="<?php echo esc_attr( get_option('your_site_url') ); ?>" />
+		        	</p>
+		        	
+		    <?php submit_button(); ?>
+		</form>
+		<p>
+			If someone is not logged in, this is what the shortcode will output: <?php echo esc_attr( get_option('your_site_url') ); ?>/wp-admin
+		</p>
+		</div>
+		<!-- .inside -->
+		</div>
+		<!-- .postbox -->
 					<div class="postbox">
 							<div style="background-color:#0073aa;width:100%;display:inline-block;vertical-align:middle;"><h2 style="color:#fff;"><span>
 								<?php echo __( 'Shortcodes', 'wp_interactive_tutorials' ); ?>
@@ -77,12 +110,9 @@ function wp_interactive_tutorials_custom_menu_page(){
 										<?php echo '<code>link=""</code>'; ?> 			
 										<?php echo __( 'The link you want your users to visit. Use /wp-admin/ to link inside the WordPress Dashboard.', 'wp_interactive_tutorials' );?>
 								</p>
+
 								<p>
-										<?php echo '<code>logged-out-text=""</code>'; ?> 			
-										<?php echo __( 'The text output before the link. Like Yoursite.com.', 'wp_interactive_tutorials' );?>
-								</p>
-								<p>
-										<?php echo '<b>Example</b>: <br>' . '<code>[interactive_tuts logged-in-text="Install Query All The Post Types" logged-out-text="Visit Youriste.com " link="/wp-admin/plugin-install.php?s=query+all+the+post+types&tab=search&type=term"]</code>'; ?>
+										<?php echo '<b>Example</b>: <br>' . '<code>[interactive_tuts logged-in-text="Install Query All The Post Types" link="/wp-admin/plugin-install.php?s=query+all+the+post+types&tab=search&type=term"]</code>'; ?>
 								</p>
 							</div>
 							<!-- .inside -->
